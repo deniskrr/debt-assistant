@@ -1,4 +1,4 @@
-package com.worldconnect.debtassistant.ui.test
+package com.worldconnect.debtassistant.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import com.worldconnect.debtassistant.R
+import com.worldconnect.debtassistant.viewmodel.TestViewModel
 
 class TestFragment : Fragment() {
 

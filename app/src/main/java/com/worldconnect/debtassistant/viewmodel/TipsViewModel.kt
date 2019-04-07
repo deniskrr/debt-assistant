@@ -1,4 +1,4 @@
-package com.worldconnect.debtassistant.ui.tips
+package com.worldconnect.debtassistant.viewmodel
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData

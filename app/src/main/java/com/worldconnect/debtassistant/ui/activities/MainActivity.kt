@@ -1,8 +1,9 @@
-package com.worldconnect.debtassistant
+package com.worldconnect.debtassistant.ui.activities
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.worldconnect.debtassistant.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
