@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_test"
+            android:icon="@drawable/ic_question_answer_white_24dp"
+            android:title="Test"/>
+
+    <item
+            android:id="@+id/navigation_overview"
+            android:icon="@drawable/ic_trending_up_white_24dp"
+            android:title="Overview"/>
+
+    <item
+            android:id="@+id/navigation_tips"
+            android:icon="@drawable/ic_bookmark_white_24dp"
+            android:title="Tips"/>
+
+</menu>
