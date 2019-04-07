@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/navigation_test">
+
+    <fragment
+            android:id="@+id/navigation_test"
+            android:name="com.worldconnect.debtassistant.ui.test.TestFragment"
+            tools:layout="@layout/fragment_test"/>
+
+    <fragment
+            android:id="@+id/navigation_overview"
+            android:name="com.worldconnect.debtassistant.ui.overview.OverviewFragment"
+            tools:layout="@layout/fragment_overview"/>
+
+    <fragment
+            android:id="@+id/navigation_tips"
+            android:name="com.worldconnect.debtassistant.ui.tips.TipsFragment"
+            tools:layout="@layout/fragment_tips"/>
+</navigation>
