@@ -9,12 +9,19 @@ import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
 
+    private lateinit var name : String
+    private var email : String? = null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
         val navController = findNavController(R.id.nav_host_fragment)
         nav_view.setupWithNavController(navController)
+
+        name = intent.extras?.get(MainActivity.NAME).toString()
+        email = intent.extras?.get(MainActivity.EMAIL).toString()
 
     }
 }
