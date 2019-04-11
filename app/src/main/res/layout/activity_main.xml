@@ -5,49 +5,47 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.activities.MainActivity"
-        android:background="@drawable/gradient_blue_background">
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/edittext_name_main"
-            android:hint="Name"
-            style="?edittext"
-            app:layout_constraintStart_toStartOf="@+id/textView" app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" android:layout_marginTop="100dp"/>
-    <EditText
-            style="?edittext"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:inputType="textEmailAddress"
-            android:ems="10"
-            android:id="@+id/edittext_email_main"
-            android:hint="E-mail (optional)" android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/edittext_name_main" app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintEnd_toEndOf="@+id/textView"/>
-    <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            tools:srcCompat="@tools:sample/avatars"
-            android:id="@+id/imageView" android:layout_marginTop="48dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintEnd_toEndOf="@+id/textView"/>
+        tools:context=".ui.activities.MainActivity">
     <TextView
             android:text="Endava"
-            android:textColor="@color/white"
-            android:textSize="72sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="32dp" android:textStyle="bold"/>
-    <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:id="@+id/button_start_main"
-            app:srcCompat="@drawable/ic_start" style="?button" app:layout_constraintTop_toBottomOf="@+id/edittext_email_main"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintEnd_toEndOf="@+id/textView"/>
+            android:id="@+id/textView"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="48dp" android:textStyle="bold"/>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="@+id/textView" app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/textView" android:layout_marginTop="200dp"
+            android:id="@+id/textInputLayout2" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" android:layout_marginTop="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" android:id="@+id/textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail (optional)"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <android.support.design.button.MaterialButton
+            android:text="Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button" app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" android:layout_marginTop="32dp"/>
 </android.support.constraint.ConstraintLayout>

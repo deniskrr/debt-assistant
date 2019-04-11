@@ -1,7 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style  name="Theme.Debt" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="button"> @style/Widget.Button.Primary</item>
-        <item name="edittext"> @style/Widget.Edittext.Primary</item>
-    </style>
 </resources>

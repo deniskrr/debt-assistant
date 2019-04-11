@@ -1,22 +1,8 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorSecondary</item>
-    </style>
+    <style  name="Theme.Debt" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">#FB8C00</item>
 
-    <style name="Widget.Button.Primary" parent="Widget.AppCompat.Button">
-        <item name="android:background">@drawable/button_rounded_secondary</item>
-        <item name="android:textColor">@color/white</item>
-    </style>
-
-    <style name="Widget.Edittext.Primary" parent="Widget.AppCompat.EditText">
-        <item name="android:paddingLeft"> 16dp </item>
-        <item name="android:paddingRight"> 16dp</item>
-        <item name="android:background">@drawable/edittext_rounded_white</item>
     </style>
 
 </resources>
