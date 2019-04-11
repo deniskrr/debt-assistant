@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         button_start_main.setOnClickListener {
 
-            val name = edittext_name_main.text.toString()
-            val email = edittext_email_main.text.toString()
+            val name = textlayout_name_main.editText?.text.toString()
+            val email = textlayout_email_main.editText?.text.toString()
 
             val intent = Intent(baseContext, HomeActivity::class.java)
             intent.putExtra(NAME, name)
