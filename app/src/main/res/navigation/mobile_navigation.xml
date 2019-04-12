@@ -3,7 +3,7 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/mobile_navigation"
-            app:startDestination="@+id/navigation_test">
+            app:startDestination="@id/navigation_home">
 
     <fragment
             android:id="@+id/navigation_test"
@@ -19,4 +19,7 @@
             android:id="@+id/navigation_tips"
             android:name="com.worldconnect.debtassistant.ui.fragment.TipsFragment"
             tools:layout="@layout/fragment_tips"/>
+    <fragment android:id="@+id/navigation_home" android:name="com.worldconnect.debtassistant.ui.fragment.HomeFragment"
+              android:label="HomeFragment"
+            tools:layout="@layout/fragment_home"/>
 </navigation>

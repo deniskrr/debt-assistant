@@ -1,7 +1,7 @@
 package com.worldconnect.debtassistant.ui.activities
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.worldconnect.debtassistant.R

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item android:title="Home"
+          android:id="@+id/navigation_home"
+          android:icon="@drawable/ic_home_white_24dp"/>
     <item
             android:id="@+id/navigation_test"
             android:icon="@drawable/ic_question_answer_white_24dp"
