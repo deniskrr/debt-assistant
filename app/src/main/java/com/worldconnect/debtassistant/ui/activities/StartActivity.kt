@@ -4,9 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.worldconnect.debtassistant.R
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_start.*
 
-class MainActivity : AppCompatActivity() {
+class StartActivity : AppCompatActivity() {
     companion object {
         val NAME = "name"
         val EMAIL = "e-mail"
@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_start)
 
         button_start_main.setOnClickListener {
 
