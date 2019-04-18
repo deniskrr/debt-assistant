@@ -20,8 +20,5 @@ class HomeActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         nav_view.setupWithNavController(navController)
 
-        name = intent.extras?.get(MainActivity.NAME).toString()
-        email = intent.extras?.get(MainActivity.EMAIL).toString()
-
     }
 }
