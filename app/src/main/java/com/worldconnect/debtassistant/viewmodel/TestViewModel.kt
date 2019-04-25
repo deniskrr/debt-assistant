@@ -3,11 +3,27 @@ package com.worldconnect.debtassistant.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.worldconnect.debtassistant.model.Question
 
 class TestViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is test Fragment"
+
+    private val _questionNumber = MutableLiveData<Int>().apply {
+        postValue(0)
     }
-    val text: LiveData<String> = _text
+
+    fun nextQuestion() {
+        if (_questionNumber.value != null) {
+            var newNumber = _questionNumber.value
+            if (newNumber != null) newNumber++
+            _questionNumber.value = newNumber
+        }
+    }
+
+    val questionNumber: LiveData<Int> = _questionNumber
+
+    lateinit var questions: List<Question>
+
+    var currentQuestion: Question? = null
+
 }
