@@ -3,31 +3,30 @@
 
     <string-array name="questions">
 
-        <item>I have been running behind for more than 1 month with the rent,
-            mortgage or health insurance premium.
+        <item>I have been running behind for more than 1 month with the rent, mortgage or health insurance premium
         </item>
 
-        <item>At the end of the month I am usually in the red and I am unable to catch up.</item>
+        <item>At the end of the month I am usually in the red and I am unable to catch up</item>
 
-        <item>It is impossible to save for extra expenses (such as a new refrigerator).</item>
+        <item>It is impossible to save for extra expenses (such as a new refrigerator)</item>
 
-        <item>I need more than 25% of my income to pay off my debts.</item>
+        <item>I need more than 25% of my income to pay off my debts</item>
 
-        <item>I have lost the overview in my administration or bank statements.</item>
+        <item>I have lost the overview in my administration or bank statements</item>
 
-        <item>I borrow money from family or acquaintances to close the gap.</item>
+        <item>I borrow money from family or acquaintances to close the gap</item>
 
-        <item>I have requested an advance on my salary.</item>
+        <item>I have requested an advance on my salary</item>
 
-        <item>I take money from my childrens savings account to make up for my own deficit.</item>
+        <item>I take money from my children savings account to make up for my own deficit</item>
 
-        <item>I sometimes can't sleep because of my financial worries.</item>
+        <item>I sometimes can\'t sleep because of my financial worries</item>
 
-        <item>I do not know if I am entitled to surcharges or remission of taxes.</item>
+        <item>I do not know if I am entitled to surcharges or remission of taxes</item>
 
-        <item>I leave the mailbox closed.</item>
+        <item>I leave the mailbox closed</item>
 
-        <item>My direct debits are often refused or reversed.</item>
+        <item>My direct debits are often refused or reversed</item>
     </string-array>
 
 
