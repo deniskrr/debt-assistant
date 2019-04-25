@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.worldconnect.debtassistant.R
-import com.worldconnect.debtassistant.model.Question
 import com.worldconnect.debtassistant.viewmodel.TestViewModel
 import kotlinx.android.synthetic.main.fragment_test.*
 
@@ -16,7 +15,7 @@ class TestFragment : Fragment() {
 
     private lateinit var testViewModel: TestViewModel
 
-    fun displayQuestion() {
+    private fun displayQuestion() {
         radio_answers.clearCheck()
         testViewModel.currentQuestion = testViewModel.questions.get(testViewModel.questionNumber.value!!)
         text_question_number.text = "Question ${testViewModel.questionNumber.value} / ${testViewModel.questions.size}"
@@ -26,21 +25,18 @@ class TestFragment : Fragment() {
         }
     }
 
+    private fun displayResult() {
+        button_next.text = "See advice"
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val questions = resources.getStringArray(R.array.questions).map { question -> Question(question) }
-        testViewModel =
-            ViewModelProviders.of(this).get(TestViewModel::class.java)
-        testViewModel.questions = questions
-        testViewModel.questionNumber.observe(this, Observer {
-            if (testViewModel.questionNumber.value != testViewModel.questions.size) {
-                displayQuestion()
-            }
-        })
 
+
+        testViewModel = ViewModelProviders.of(activity!!).get(TestViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_test, container, false)
 
         return root
@@ -48,8 +44,20 @@ class TestFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        testViewModel.questionNumber.observe(this, Observer {
+            if (testViewModel.questionNumber.value != testViewModel.questions.size) {
+                displayQuestion()
+            } else {
+                displayResult()
+            }
+        })
+
         button_next.setOnClickListener {
-            testViewModel.nextQuestion()
+            if (radio_answers.checkedRadioButtonId != -1) {
+                if (radio_yes.isChecked) testViewModel.yesCount++
+                testViewModel.nextQuestion()
+            }
         }
     }
 }

@@ -7,6 +7,7 @@ import com.worldconnect.debtassistant.model.Question
 
 class TestViewModel : ViewModel() {
 
+    var yesCount = 0
 
     private val _questionNumber = MutableLiveData<Int>().apply {
         postValue(0)
@@ -15,7 +16,7 @@ class TestViewModel : ViewModel() {
     fun nextQuestion() {
         if (_questionNumber.value != null) {
             var newNumber = _questionNumber.value
-            if (newNumber != null) newNumber++
+            if (newNumber != null && newNumber != questions.size - 1) newNumber++
             _questionNumber.value = newNumber
         }
     }
