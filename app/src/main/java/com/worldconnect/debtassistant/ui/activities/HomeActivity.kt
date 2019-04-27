@@ -12,6 +12,9 @@ import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
 
+    companion object {
+        val YES = "YES"
+    }
     private lateinit var name: String
     private var email: String? = null
 

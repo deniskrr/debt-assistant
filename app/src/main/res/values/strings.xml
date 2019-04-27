@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DebtAssistant</string>
+    <string name="advice_two">You don\'t need help.</string>
+    <string name="advice_five">Don\'t be afraid to ask your friends or family for help.</string>
+    <string name="advice_nine">You have to ask for professional help.</string>
+    <string name="advice_twelve">You are in danger! You immediately have to ask for professional help</string>
+
 </resources>

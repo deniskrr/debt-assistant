@@ -19,4 +19,9 @@
             android:icon="@drawable/ic_bookmark_white_24dp"
             android:title="Tips"/>
 
+    <item
+            android:id="@+id/navigation_advice"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="Advice" android:enabled="false"/>
+
 </menu>

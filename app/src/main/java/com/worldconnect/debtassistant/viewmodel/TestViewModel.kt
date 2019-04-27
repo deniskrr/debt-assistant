@@ -16,7 +16,7 @@ class TestViewModel : ViewModel() {
     fun nextQuestion() {
         if (_questionNumber.value != null) {
             var newNumber = _questionNumber.value
-            if (newNumber != null && newNumber != questions.size - 1) newNumber++
+            if (newNumber != null && newNumber != questions.size) newNumber++
             _questionNumber.value = newNumber
         }
     }
