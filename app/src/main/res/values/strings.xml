@@ -4,5 +4,21 @@
     <string name="advice_five">Don\'t be afraid to ask your friends or family for help.</string>
     <string name="advice_nine">You have to ask for professional help.</string>
     <string name="advice_twelve">You are in danger! You immediately have to ask for professional help</string>
+    <string name="tips">
+        What do you need? \n\n
+        \t- Motivation: to want to pay your debts \n
+        \t- Discipline: to make payments every month \n
+        \t- Perseverance: to follow these steps until you are debt free \n\n\n
+        Why pay off your debts? \n\n
+        \t- Anyone who thinks more about debt than repays is being followed by bad luck \n
+        \t- Bad debts are debts that make you poorer and ensure that you get deeper into debt \n
+        \t- The more money you can save for yourself, the less worry and stress you have \n\n\n
+        To do! \n\n
+        \t- Tell yourself the truth that you are in debt! \n
+        \t- Put all your income and expenses on paper to get a good overview. \n
+        \t- Discuss your debts with your peers. If they know that you are paying, they can support you or take your
+        finances into account. Perhaps your friends would rather propose a drink evening at home insetad of terrace
+        evening for example.
+    </string>
 
 </resources>
