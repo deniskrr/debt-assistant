@@ -22,4 +22,7 @@
     <fragment android:id="@+id/navigation_home" android:name="com.worldconnect.debtassistant.ui.fragment.HomeFragment"
               android:label="HomeFragment"
             tools:layout="@layout/fragment_home"/>
+    <fragment android:id="@+id/navigation_advice"
+              android:name="com.worldconnect.debtassistant.ui.fragment.AdviceFragment"
+              android:label="fragment_advice" tools:layout="@layout/fragment_advice"/>
 </navigation>
