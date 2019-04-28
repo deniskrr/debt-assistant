@@ -25,6 +25,6 @@ class HomeFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         name = activity?.intent?.extras?.get(StartActivity.NAME).toString()
-        text_greeting.text = "Welcome $name"
+        text_name.text = name
     }
 }
