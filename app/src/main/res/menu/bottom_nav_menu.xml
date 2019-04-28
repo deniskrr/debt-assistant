@@ -10,11 +10,6 @@
             android:title="Test"/>
 
     <item
-            android:id="@+id/navigation_overview"
-            android:icon="@drawable/ic_trending_up_white_24dp"
-            android:title="Overview"/>
-
-    <item
             android:id="@+id/navigation_tips"
             android:icon="@drawable/ic_bookmark_white_24dp"
             android:title="Tips"/>

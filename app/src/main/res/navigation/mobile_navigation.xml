@@ -11,11 +11,6 @@
             tools:layout="@layout/fragment_test"/>
 
     <fragment
-            android:id="@+id/navigation_overview"
-            android:name="com.worldconnect.debtassistant.ui.fragment.OverviewFragment"
-            tools:layout="@layout/fragment_overview"/>
-
-    <fragment
             android:id="@+id/navigation_tips"
             android:name="com.worldconnect.debtassistant.ui.fragment.TipsFragment"
             tools:layout="@layout/fragment_tips"/>
