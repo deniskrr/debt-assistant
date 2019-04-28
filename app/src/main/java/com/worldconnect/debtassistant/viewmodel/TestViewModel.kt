@@ -9,8 +9,13 @@ class TestViewModel : ViewModel() {
 
     var yesCount = 0
 
+
     private val _questionNumber = MutableLiveData<Int>().apply {
         postValue(0)
+    }
+
+    fun reset() {
+        _questionNumber.value = 0
     }
 
     fun nextQuestion() {
