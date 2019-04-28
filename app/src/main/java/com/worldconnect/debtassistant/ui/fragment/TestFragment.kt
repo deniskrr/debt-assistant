@@ -66,12 +66,16 @@ class TestFragment : Fragment() {
         button_next.text = "See advice"
 
         button_next.setOnClickListener {
-            activity!!.nav_view.menu.findItem(R.id.navigation_advice).isEnabled = true
+            if (radio_answers.checkedRadioButtonId != -1) {
+                if (radio_yes.isChecked) testViewModel.yesCount++
+                activity!!.nav_view.menu.findItem(R.id.navigation_advice).isEnabled = true
+                activity!!.nav_view.menu.findItem(R.id.navigation_test).isEnabled = false
 
-            findNavController(requireActivity(), R.id.nav_host_fragment).navigate(
-                R.id.navigation_advice,
-                bundleOf(HomeActivity.YES to testViewModel.yesCount)
-            )
+                findNavController(requireActivity(), R.id.nav_host_fragment).navigate(
+                    R.id.navigation_advice,
+                    bundleOf(HomeActivity.YES to testViewModel.yesCount)
+                )
+            }
         }
     }
 }
