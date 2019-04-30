@@ -1,9 +1,10 @@
 <resources>
 
-    <style  name="Theme.Debt" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.Debt" parent="Theme.MaterialComponents.NoActionBar">
+        <!--<item name="android:background"-->
+        <item name="android:textColor">@color/black</item>
         <item name="colorPrimary">#FB8C00</item>
         <item name="colorSecondary">@color/colorSecondary</item>
-        <item name="colorButtonNormal">@color/colorSecondaryDark</item>
         <!--<item name="colorAccent">@color/colorPrimaryDark</item>-->
     </style>
 
