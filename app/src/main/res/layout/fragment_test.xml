@@ -12,22 +12,19 @@
     <Button
             android:text="Next"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="75dp"
+            android:textSize="28sp"
+            android:textColor="@color/black"
             android:id="@+id/button_next"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_marginStart="8dp" android:layout_marginLeft="8dp"
             app:layout_constraintEnd_toEndOf="@+id/card_question"
-            app:layout_constraintStart_toStartOf="@+id/card_question" android:layout_marginBottom="100dp"
+            app:layout_constraintStart_toStartOf="@+id/card_question"
             app:layout_constraintBottom_toBottomOf="parent"/>
     <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
-            android:layout_height="400dp"
+            android:layout_height="0dp"
             android:id="@+id/card_question" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="32dp"
-            android:layout_marginLeft="48dp" android:layout_marginStart="48dp"
-            android:layout_marginRight="48dp" android:layout_marginEnd="48dp"
-            app:cardElevation="2dp" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/button_next">
 
 
@@ -45,16 +42,19 @@
                     android:layout_marginBottom="72dp">
                 <RadioButton
                         android:text="Yes"
+                        android:buttonTint="@color/colorPrimary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/radio_yes" android:layout_weight="1"/>
                 <RadioButton
                         android:text="No"
+                        android:buttonTint="@color/colorPrimary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/radio_no" android:layout_weight="1"/>
             </RadioGroup>
             <TextView
                     tools:text="Question 0"
                     android:textSize="32sp"
+                    android:textColor="@color/colorPrimary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:id="@+id/text_question_number"
                     app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +66,7 @@
                     tools:text="I have been running behind for more than 1 month with the rent, mortgage or health insurance premium."
                     android:layout_width="0dp"
                     android:textSize="18sp"
+                    android:textColor="@color/white"
                     android:layout_height="wrap_content" android:id="@+id/text_question"
                     app:layout_constraintTop_toBottomOf="@+id/text_question_number"
                     app:layout_constraintEnd_toEndOf="parent"
