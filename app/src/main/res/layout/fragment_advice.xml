@@ -14,7 +14,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" android:textStyle="bold"
             app:layout_constraintHorizontal_bias="0.5"
-            android:text="Advice" android:layout_marginTop="48dp" android:id="@+id/textView4"/>
+            android:text="Advice" android:layout_marginTop="48dp" android:id="@+id/textView4"
+            android:textColor="@color/colorPrimary"/>
     <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
