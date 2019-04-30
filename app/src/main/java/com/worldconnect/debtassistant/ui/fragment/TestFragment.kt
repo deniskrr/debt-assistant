@@ -4,13 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation.findNavController
 import com.worldconnect.debtassistant.R
-import com.worldconnect.debtassistant.ui.activities.HomeActivity
 import com.worldconnect.debtassistant.viewmodel.TestViewModel
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.fragment_test.*
@@ -72,9 +70,9 @@ class TestFragment : Fragment() {
                 activity!!.nav_view.menu.findItem(R.id.navigation_test).isEnabled = false
 
                 findNavController(requireActivity(), R.id.nav_host_fragment).navigate(
-                    R.id.navigation_advice,
-                    bundleOf(HomeActivity.YES to testViewModel.yesCount)
+                    R.id.navigation_advice
                 )
+
             }
         }
     }

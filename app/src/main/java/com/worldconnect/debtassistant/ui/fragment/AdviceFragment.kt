@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import com.worldconnect.debtassistant.R
-import com.worldconnect.debtassistant.ui.activities.HomeActivity
 import com.worldconnect.debtassistant.viewmodel.TestViewModel
 import kotlinx.android.synthetic.main.fragment_advice.*
 
@@ -16,7 +15,6 @@ import kotlinx.android.synthetic.main.fragment_advice.*
 class AdviceFragment : Fragment() {
 
     private lateinit var testViewModel: TestViewModel
-    private var yesAnswers: Int = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,7 +30,7 @@ class AdviceFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        yesAnswers = arguments!!.getInt(HomeActivity.YES)
+        val yesAnswers = testViewModel.yesCount
         text_advice.text = when (yesAnswers) {
             in 0..2 -> resources.getString(R.string.advice_two)
             in 3..5 -> resources.getString(R.string.advice_five)
