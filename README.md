@@ -1,2 +1,4 @@
-# World-Connect
-The international project with Cluj and Amsterdam
+# Endava Debt Assistant
+
+## Test run
+![](test-run.gif)
