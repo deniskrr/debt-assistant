@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import com.worldconnect.debtassistant.R
-import com.worldconnect.debtassistant.ui.activities.StartActivity
 import com.worldconnect.debtassistant.viewmodel.TestViewModel
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.fragment_home.*
@@ -29,8 +28,6 @@ class HomeFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        name = activity?.intent?.extras?.get(StartActivity.NAME).toString()
-        text_name.text = name
 
         button_begin_test.setOnClickListener {
 
