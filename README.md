@@ -1,4 +1,4 @@
-# Endava Debt Assisstant
+# Endava Debt Assistant
 
 ## Test run
 ![](test-run.gif)
