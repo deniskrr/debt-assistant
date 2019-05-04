@@ -16,6 +16,7 @@ class TestViewModel : ViewModel() {
 
     fun reset() {
         _questionNumber.value = 0
+        yesCount = 0
     }
 
     fun nextQuestion() {
